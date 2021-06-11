@@ -1,0 +1,60 @@
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 2.5rem auto;
+    text-align: center;
+}
+
+div {
+    text-align: center
+}
+
+span {
+    font-size: 1.25rem;
+    color: white;
+    margin: auto 0.5rem;
+}
+
+.btnReg {
+    width: 70rem;
+    margin: auto;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    background-color: black;
+    position: sticky;
+    top: 1rem;
+}
+
+.buttons {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.25rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: auto 1rem;
+}
+
+.buttons:hover {
+    background-color: rgba(256, 256, 256, 1);
+    color: black
+}
+
+#cnvReg {
+    width: 70rem;
+    margin: 2.5rem auto;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin: 2.5rem;
+}

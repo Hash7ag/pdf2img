@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PDF2IMG</title>
+    <h1>PDF to Image</h1>
+</head>
+
+<body>
+    <div class="btnReg">
+        <input id="upload" type="file" onchange="loadPdf(event);" accept=".pdf" hidden="true" />
+
+        <input type="button" class="buttons" onclick="document.getElementById('upload').click();" value="Upload" />
+
+        <input type="button" class="buttons" onclick="pageBack();" value="Back" />
+        <span id="curPageNum">0</span>
+        <span style="font-size: 2rem">/</span>
+        <span id="totPageNum">0</span>
+        <input type="button" class="buttons" onclick="nextPage();" value="Next" />
+
+        <span>Convert&nbsp;to:</span>
+        <input type="radio" name="imgType" value="png" checked><span>png</span></input>
+        <input type="radio" name="imgType" value="jpeg"><span>jpeg</span></input>
+
+        <input type="button" class="buttons" onclick="download();" download="Image.png" href="#" value="Download" />
+        <input type="button" class="buttons" onclick="downloadAll();" value="Download All" />
+    </div>
+
+    <div id="cnvReg"></canvas></div>
+</body>
+
+<footer>
+    Copyright © 2021 Hash7ag All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.8.335/build/pdf.js"
+    integrity="sha256-jaO3/2mbKpHACKerqmUWjYSdp21J3NUK835CqLhkJfU=" crossorigin="anonymous"></script>
+<script src="./js/jszip.js"></script>
+<script src="./js/FileSaver.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
