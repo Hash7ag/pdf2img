@@ -14,7 +14,7 @@ h1 {
 }
 
 div {
-    text-align: center
+    text-align: center;
 }
 
 span {
@@ -45,7 +45,7 @@ span {
 
 .buttons:hover {
     background-color: rgba(256, 256, 256, 1);
-    color: black
+    color: black;
 }
 
 #cnvReg {
